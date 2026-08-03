@@ -73,6 +73,12 @@
     "wall_wrecker.png",
     "witch.png",
     "wizard.png",
-    "yeti.png"
+    "yeti.png",
+    "join.png",
+    "you_need_more.png",
+    "consent_pop_up.png",
+    "setting.png",
+    "upgrade.png",
+    "upgrade_more.png"
   ]
 }
