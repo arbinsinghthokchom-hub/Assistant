@@ -1,5 +1,5 @@
 {
-  "version": 22,
+  "version": 23,
   "templates": [
     "apprentice_warden.png",
     "archer.png",
@@ -82,6 +82,7 @@
     "card.png",
     "claim_reward.png",
     "upgrade_wall.png",
+    "donation_page_available.png",
     "upgrade_more.png"
   ]
 }
