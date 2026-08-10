@@ -1,5 +1,5 @@
 {
-  "version": 19,
+  "version": 20,
   "templates": [
     "apprentice_warden.png",
     "archer.png",
@@ -81,6 +81,7 @@
     "upgrade.png",
     "card.png",
     "claim_reward.png",
+    "upgrade_wall.png",
     "upgrade_more.png"
   ]
 }
