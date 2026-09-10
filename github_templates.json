@@ -1,5 +1,5 @@
 {
-  "version": 26,
+  "version": 27,
   "templates": [
     "apprentice_warden.png",
     "archer.png",
@@ -85,6 +85,7 @@
     "donation_page_available.png",
     "clash_of_clans.webp",
     "event_reward.png",
+    "townhall16.png",
     "upgrade_more.png"
   ]
 }
