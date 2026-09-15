@@ -1,5 +1,5 @@
 {
-  "version": 28,
+  "version": 29,
   "templates": [
     "apprentice_warden.png",
     "archer.png",
@@ -99,6 +99,10 @@
     "gmail_submit_okay_button.png",
     "submit_otp_screen.png",
     "submit_otp_okay_button",
+    "confirm_link.png",
+    "confirm_profile_name.png",
+    "confirm_avatar.png",
+    "linked_successfully.png",
     "upgrade_more.png"
   ]
 }
