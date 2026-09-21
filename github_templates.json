@@ -1,5 +1,5 @@
 {
-  "version": 30,
+  "version": 31,
   "templates": [
     "apprentice_warden.png",
     "archer.png",
@@ -103,6 +103,7 @@
     "confirm_profile_name.png",
     "confirm_avatar.png",
     "linked_successfully.png",
+    "yourvillageisunderattack.png",
     "upgrade_more.png"
   ]
 }
