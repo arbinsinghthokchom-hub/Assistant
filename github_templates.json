@@ -1,5 +1,5 @@
 {
-  "version": 35,
+  "version": 36,
   "templates": [
     "apprentice_warden.png",
     "archer.png",
@@ -107,6 +107,7 @@
     "usercentrics.xml",
     "never.png",
     "notNow.png",
+    "reload.png",
     "upgrade_more.png"
   ]
 }
