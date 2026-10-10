@@ -1,5 +1,5 @@
 {
-  "version": 39,
+  "version": 40,
   "templates": [
     "apprentice_warden.png",
     "archer.png",
@@ -113,6 +113,8 @@
     "girl_dialogue.png",
     "goblin_dialogue.png",
     "age_filling.png",
+    "log_me_in_coc.png",
+    "set_reinforcement.png",
     "upgrade_more.png"
   ]
 }
