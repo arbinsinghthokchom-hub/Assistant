@@ -1,0 +1,621 @@
+{
+  "version": 1,
+  "faqs": [
+    {
+      "id": "auto_req_01",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "What is Auto Request and how does it work?",
+      "alternativeQuestions": [
+        "What does Auto Request do?",
+        "How does automatic troop requesting work?",
+        "What is the Auto Request feature?",
+        "Explain Auto Request"
+      ],
+      "answer": "Auto Request automatically sends troop requests at configured intervals. Before starting, make sure root access is enabled, Accessibility Service is enabled, your account folders are configured correctly, and your automation settings match your folder structure. Set the required options in Automation Settings and tap Start.",
+      "keywords": ["auto request", "automatic request", "troop request", "automation", "start"],
+      "enabled": true
+    },
+    {
+      "id": "auto_req_02",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "Is root access required for Auto Request?",
+      "alternativeQuestions": [
+        "Do I need root for Auto Request?",
+        "Why does Auto Request require root?",
+        "Can I use Auto Request without root?",
+        "Does the app need root permission?"
+      ],
+      "answer": "Yes. Root access must be enabled for Auto Request to work correctly. Make sure your device has working root access and that the app has been granted root permission. If root was enabled only recently, force-stop the Assistant app and open it again so the app can detect the updated root status.",
+      "keywords": ["root", "root access", "root permission", "magisk", "root required"],
+      "enabled": true
+    },
+    {
+      "id": "auto_req_03",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "I enabled root, but the app does not detect it. What should I do?",
+      "alternativeQuestions": [
+        "Root is enabled but not detected",
+        "Why is root not working?",
+        "The app says root is disabled",
+        "I just enabled root",
+        "Root detection failed"
+      ],
+      "answer": "If you enabled root just now, the app may not detect the change immediately. Open your device's app settings, force-stop Assistant, and launch it again. Confirm that root access is still enabled and that you have granted the app root permission when prompted. Then check the feature again.",
+      "keywords": ["root not detected", "root enabled", "force stop", "restart app", "root error"],
+      "enabled": true
+    },
+    {
+      "id": "auto_req_04",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "Is Accessibility Service required for Auto Request?",
+      "alternativeQuestions": [
+        "Do I need to enable Accessibility?",
+        "Can Auto Request work without Accessibility Service?",
+        "Why is Accessibility permission required?",
+        "Auto Request is not working because of Accessibility"
+      ],
+      "answer": "Yes. Accessibility Service must be enabled for Auto Request. Open your device's Accessibility settings, find the Assistant service, and enable it. If Android disables the service or displays a permission warning, enable it again before starting automation.",
+      "keywords": ["accessibility", "accessibility service", "permission", "enable accessibility", "required"],
+      "enabled": true
+    },
+    {
+      "id": "auto_req_05",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "I enabled Accessibility Service, but Auto Request still does not work.",
+      "alternativeQuestions": [
+        "Accessibility is enabled but automation fails",
+        "Why is Accessibility not working?",
+        "Auto Request does not start after enabling Accessibility",
+        "The app cannot click anything"
+      ],
+      "answer": "First, confirm that the Assistant Accessibility Service is still enabled in Android settings. Next, verify that root access is enabled and granted to the app. Check your device compatibility and account folder configuration. If root was enabled recently, force-stop Assistant and reopen it. Then try Auto Request again.",
+      "keywords": ["accessibility not working", "cannot click", "automation not starting", "root", "troubleshooting"],
+      "enabled": true
+    },
+    {
+      "id": "auto_req_06",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "What language should I use for the account folder name?",
+      "alternativeQuestions": [
+        "Can I use a Chinese folder name?",
+        "Can I name the folder in my local language?",
+        "Are non-English folder names supported?",
+        "Can I use special language characters in the folder name?"
+      ],
+      "answer": "Use English letters and numbers for the account folder name. Chinese and other non-English folder names are not supported by the current configuration. For example, use 'accounts' or 'myaccounts' instead of a folder name written in another language.",
+      "keywords": ["folder language", "English folder", "Chinese folder", "folder name", "non-English"],
+      "enabled": true
+    },
+    {
+      "id": "auto_req_07",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "Where should I save the account folders?",
+      "alternativeQuestions": [
+        "Where is the correct storage location?",
+        "Can I save the folders in Downloads?",
+        "Where should the account directory be located?",
+        "What is the correct path for Auto Request folders?"
+      ],
+      "answer": "Save the account folder structure under the device's emulated internal storage, normally represented by /storage/emulated/0/. The account folder must be located in the correct storage directory expected by the app. Do not save it in an unrelated directory. Follow the required structure: /storage/emulated/0/<folder_name>/<account_number>/shared_prefs/.",
+      "keywords": ["storage", "emulated", "internal storage", "folder path", "directory", "shared_prefs"],
+      "enabled": true
+    },
+    {
+      "id": "auto_req_08",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "What is the correct folder structure for Auto Request?",
+      "alternativeQuestions": [
+        "How should I arrange the account folders?",
+        "Where does shared_prefs go?",
+        "What is the required directory structure?",
+        "How do I organize multiple accounts?"
+      ],
+      "answer": "Use this structure: /storage/emulated/0/<folder_name>/<account_number>/shared_prefs/. For example, if your folder name is 'accounts' and the account number is 1, the directory should be /storage/emulated/0/accounts/1/shared_prefs/. Each account must have its own numbered directory, and the shared_prefs folder must be inside that account directory.",
+      "keywords": ["folder structure", "shared_prefs", "account directory", "directory layout", "path"],
+      "enabled": true
+    },
+    {
+      "id": "auto_req_09",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "Is the folder name case-sensitive?",
+      "alternativeQuestions": [
+        "Can I use uppercase letters in the folder name?",
+        "Does capitalization matter?",
+        "Why is my folder not detected?",
+        "Are folder names case-sensitive?"
+      ],
+      "answer": "Yes. The folder name is case-sensitive and must match exactly. For example, 'accounts', 'Accounts', and 'ACCOUNTS' may be treated as different folder names. Use the same spelling and capitalization in your storage folder and Automation Settings.",
+      "keywords": ["case-sensitive", "capitalization", "uppercase", "lowercase", "folder mismatch"],
+      "enabled": true
+    },
+    {
+      "id": "auto_req_10",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "Does the folder name need to match Automation Settings?",
+      "alternativeQuestions": [
+        "Why is my account folder not found?",
+        "The folder exists but the app cannot find it",
+        "What folder name should I enter?",
+        "My folder name is different in settings"
+      ],
+      "answer": "Yes. The folder name entered in Automation Settings must match the actual folder name in storage exactly, including capitalization. For example, if the folder is named 'accounts', enter 'accounts' in the settings. If the names differ, the app may not find the account folders.",
+      "keywords": ["folder mismatch", "automation settings", "folder name", "account folder not found", "exact match"],
+      "enabled": true
+    },
+    {
+      "id": "auto_req_11",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "How should I number the account folders?",
+      "alternativeQuestions": [
+        "Should account folders use numbers?",
+        "Can I name account folders with words?",
+        "What is a valid account folder number?",
+        "How do I create numbered account directories?"
+      ],
+      "answer": "Each account directory must use its assigned natural-number name, such as 1, 2, 3, and so on. For example, the folder for account 1 should be named '1', not 'account1' or 'one'. Each numbered directory should contain its required shared_prefs folder.",
+      "keywords": ["account number", "natural number", "numbered folders", "directory name", "account numbering"],
+      "enabled": true
+    },
+    {
+      "id": "auto_req_12",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "Why does Auto Request say an account folder is missing?",
+      "alternativeQuestions": [
+        "Account folder not found",
+        "Some accounts are missing",
+        "The app cannot find my shared preferences",
+        "My folder structure looks correct but does not work"
+      ],
+      "answer": "Check that the main folder is saved under the correct emulated storage location, that its name matches Automation Settings exactly, and that each account has a numbered directory containing shared_prefs. Also verify that the account numbers cover the full range configured in Automation Settings.",
+      "keywords": ["missing folder", "account not found", "shared_prefs missing", "folder path", "account range"],
+      "enabled": true
+    },
+    {
+      "id": "auto_req_13",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "Do all account numbers in the configured range need to exist?",
+      "alternativeQuestions": [
+        "Do I need every account folder?",
+        "Can I skip account numbers?",
+        "What if some numbered folders are missing?",
+        "Must the account range match my folders?"
+      ],
+      "answer": "Yes. The account folders must cover the full range configured in Automation Settings. For example, if the configured range is 1–48, the corresponding folders for accounts 1 through 48 must exist. Having folders numbered 51–98 instead does not satisfy a configured range of 1–48.",
+      "keywords": ["account range", "missing accounts", "folder numbers", "1-48", "account range mismatch"],
+      "enabled": true
+    },
+    {
+      "id": "auto_req_14",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "My folders are numbered 51–98, but Automation Settings is set to 1–48. Will it work?",
+      "alternativeQuestions": [
+        "Can I use account numbers 51 to 98?",
+        "Why does the account range not match?",
+        "My folder numbers start at 51",
+        "Can folder numbers differ from the configured range?"
+      ],
+      "answer": "No. The folder numbers must match the account range configured in Automation Settings. If the setting is 1–48, folders 1 through 48 must exist. Folders 51–98 do not replace folders 1–48. Change the configured range to match the actual folders only if the app supports that range and you intend to use those accounts.",
+      "keywords": ["51-98", "1-48", "account range", "range mismatch", "folder numbering"],
+      "enabled": true
+    },
+    {
+      "id": "auto_req_15",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "What device resolution is required for Auto Request?",
+      "alternativeQuestions": [
+        "Which screen resolution should I use?",
+        "Can I use 1080p resolution?",
+        "Does display resolution affect automation?",
+        "What resolution does the app support?"
+      ],
+      "answer": "The required device resolution is 720 × 1280 pixels with a density of 320 DPI. Devices using a different resolution or display density may not behave correctly because the automation depends on the expected screen layout and coordinates.",
+      "keywords": ["resolution", "720x1280", "720 1280", "320 DPI", "screen size", "display density"],
+      "enabled": true
+    },
+    {
+      "id": "auto_req_16",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "What Android version is required for Auto Request?",
+      "alternativeQuestions": [
+        "Does Auto Request support Android 12?",
+        "Can I use Android 13?",
+        "Will it work on Android 9?",
+        "Is Android 14 or 15 supported?"
+      ],
+      "answer": "Auto Request is designed for Android 12 and Android 13. Android 9, Android 14, Android 15, and other versions are not supported by the current configuration and may not work correctly.",
+      "keywords": ["Android version", "Android 12", "Android 13", "Android 9", "Android 14", "Android 15", "compatibility"],
+      "enabled": true
+    },
+    {
+      "id": "auto_req_17",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "Can I run Auto Request on an Android emulator?",
+      "alternativeQuestions": [
+        "Does Auto Request work on LDPlayer?",
+        "Can I use MuMu Player?",
+        "Does the automation support PC emulators?",
+        "Will it work on an Android virtual machine?"
+      ],
+      "answer": "PC emulators such as LDPlayer and MuMu Player may not work correctly. Compatibility is not guaranteed because emulator behavior, root implementation, Accessibility Service, screen resolution, and display density can differ from the supported configuration. Use a compatible Android environment with the required settings for the most reliable results.",
+      "keywords": ["emulator", "LDPlayer", "MuMu", "PC emulator", "virtual machine", "compatibility"],
+      "enabled": true
+    },
+    {
+      "id": "auto_req_18",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "Why does Auto Request misclick or tap the wrong option?",
+      "alternativeQuestions": [
+        "Automation clicks the wrong button",
+        "Why are taps inaccurate?",
+        "Auto Request makes mistakes",
+        "The automation clicks too early",
+        "How do I fix incorrect clicks?"
+      ],
+      "answer": "Misclicks may occur when the network is slow or unstable and the game has not finished loading before the next action. Check that your internet connection is stable and allow the game to finish loading. Confirm that the device uses the required 720 × 1280 resolution and 320 DPI, and avoid interacting with the screen while automation is running.",
+      "keywords": ["misclick", "wrong click", "incorrect tap", "network delay", "slow internet", "loading"],
+      "enabled": true
+    },
+    {
+      "id": "auto_req_19",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "Does network speed affect Auto Request?",
+      "alternativeQuestions": [
+        "Can slow internet cause automation errors?",
+        "Why does Auto Request fail on a weak connection?",
+        "Does the automation need stable internet?",
+        "My network is lagging"
+      ],
+      "answer": "Yes. A slow or unstable network can delay game responses and cause the automation to act before the expected screen appears. Use a stable internet connection, wait for loading to finish, and try again. If the problem continues despite a stable connection, check the other compatibility and configuration requirements.",
+      "keywords": ["network", "internet", "connection", "lag", "delay", "unstable network"],
+      "enabled": true
+    },
+    {
+      "id": "auto_req_20",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "Why does automation get stuck on a chest screen?",
+      "alternativeQuestions": [
+        "Auto Request is stuck at Chest Open",
+        "The game is stuck on the chest screen",
+        "Automation cannot get past a chest",
+        "How do I fix a stuck chest screen?"
+      ],
+      "answer": "If the game is stuck on a chest screen or a chest-related pop-up, stop the current automation. Use the Chest Open feature to handle the chest screen if applicable. Once the screen has been cleared and the game is back in the expected state, start Auto Request again.",
+      "keywords": ["stuck chest", "chest screen", "Chest Open", "popup", "automation stuck"],
+      "enabled": true
+    },
+    {
+      "id": "auto_req_21",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "Why is automation stuck on a pop-up or dialogue?",
+      "alternativeQuestions": [
+        "The game is showing a dialogue box",
+        "Automation cannot close a pop-up",
+        "Auto Request is stuck on a confirmation screen",
+        "How do I fix a dialogue screen?"
+      ],
+      "answer": "A pop-up or dialogue can prevent the automation from reaching the expected screen. Stop Auto Request and use the app's Fixing Dialogue feature, if available, to clear the dialogue. Check that the game has returned to the correct screen before restarting automation.",
+      "keywords": ["dialogue", "popup", "pop-up", "confirmation", "Fixing Dialogue", "stuck screen"],
+      "enabled": true
+    },
+    {
+      "id": "auto_req_22",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "Should I run Auto Request while Chest Open or a dialogue is stuck?",
+      "alternativeQuestions": [
+        "Can I continue automation with a pop-up open?",
+        "Should I restart while the game is stuck?",
+        "Can Auto Request handle every screen?",
+        "What should I do before restarting automation?"
+      ],
+      "answer": "No. First resolve the screen that is blocking progress. Use Chest Open for a stuck chest screen or Fixing Dialogue for a blocking dialogue, where applicable. Restart Auto Request only after the game has returned to the expected screen.",
+      "keywords": ["restart automation", "stuck screen", "Chest Open", "Fixing Dialogue", "popup"],
+      "enabled": true
+    },
+    {
+      "id": "auto_req_23",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "Why does Auto Request stop unexpectedly?",
+      "alternativeQuestions": [
+        "Auto Request stopped by itself",
+        "The automation does not finish",
+        "Why did the automation pause?",
+        "Auto Request is no longer running"
+      ],
+      "answer": "Check whether root access or Accessibility Service has been disabled, whether the network is unstable, or whether a chest screen or dialogue is blocking progress. Also verify that your account folders and configured account range match. If the issue occurs repeatedly, note the screen where the automation stops and contact support with those details.",
+      "keywords": ["stopped unexpectedly", "automation stopped", "automation paused", "root", "accessibility", "network"],
+      "enabled": true
+    },
+    {
+      "id": "auto_req_24",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "How do I troubleshoot Auto Request if it does not start?",
+      "alternativeQuestions": [
+        "Auto Request will not start",
+        "Start button does nothing",
+        "Why is Auto Request not running?",
+        "Automation launch problem"
+      ],
+      "answer": "Check the following: root access is enabled and granted to Assistant; Accessibility Service is enabled; the app has been force-stopped and reopened if root was enabled recently; the folder name matches Automation Settings exactly; the account directories follow the required numbered structure; the configured account range exists; and the device uses Android 12 or 13 at 720 × 1280 resolution and 320 DPI. Also ensure that the network is stable.",
+      "keywords": ["not starting", "start button", "troubleshooting", "setup checklist", "automation error"],
+      "enabled": true
+    },
+    {
+      "id": "auto_req_25",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "What should I check before starting Auto Request?",
+      "alternativeQuestions": [
+        "Auto Request checklist",
+        "How do I prepare for automation?",
+        "What settings are required?",
+        "Before starting Auto Request"
+      ],
+      "answer": "Before starting, confirm that root access is enabled and granted, Accessibility Service is enabled, the folder name uses supported English characters and matches Automation Settings exactly, and every configured account number has the required shared_prefs directory. Confirm Android 12 or 13, resolution 720 × 1280, density 320 DPI, and a stable internet connection. Clear any blocking chest screen or dialogue before running automation.",
+      "keywords": ["checklist", "before starting", "requirements", "setup", "root", "accessibility", "resolution"],
+      "enabled": true
+    },
+    {
+      "id": "auto_req_26",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "Can I change the account folder name after setting up Auto Request?",
+      "alternativeQuestions": [
+        "Can I rename my account folder?",
+        "What happens if I change the folder name?",
+        "I renamed the folder and automation stopped",
+        "Do I need to update Automation Settings after renaming?"
+      ],
+      "answer": "You can rename the folder only if you also update the folder name in Automation Settings to match exactly. Remember that capitalization matters. If the storage folder and the configured name do not match, the app may not find the account directories.",
+      "keywords": ["rename folder", "folder name change", "settings mismatch", "capitalization", "account directory"],
+      "enabled": true
+    },
+    {
+      "id": "auto_req_27",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "Can I use a different screen resolution for Auto Request?",
+      "alternativeQuestions": [
+        "Will 1080 × 2400 work?",
+        "Can I use my phone's default resolution?",
+        "Does 320 DPI matter?",
+        "Can I change DPI for automation?"
+      ],
+      "answer": "The required configuration is 720 × 1280 pixels at 320 DPI. Other resolutions or densities may cause incorrect taps or unexpected behavior. Use the specified configuration for the intended compatibility, and verify that any resolution or density changes have actually been applied before starting.",
+      "keywords": ["screen resolution", "1080x2400", "DPI", "320 DPI", "display configuration"],
+      "enabled": true
+    },
+    {
+      "id": "auto_req_28",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "Why does Auto Request fail on Android 14 or Android 15?",
+      "alternativeQuestions": [
+        "Does Android 14 work?",
+        "Can I use Android 15?",
+        "Automation is broken on a newer Android version",
+        "Which Android versions are unsupported?"
+      ],
+      "answer": "The current Auto Request configuration is intended for Android 12 and Android 13. Android 14 and Android 15 are not supported by the current setup and may fail even if the other settings are correct. Use a supported Android version for the intended behavior.",
+      "keywords": ["Android 14", "Android 15", "unsupported Android", "compatibility", "Android version"],
+      "enabled": true
+    },
+    {
+      "id": "auto_req_29",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "Can I use Auto Request on Android 9?",
+      "alternativeQuestions": [
+        "Does Android 9 support automation?",
+        "Will an older Android version work?",
+        "Can I run Auto Request on an old device?"
+      ],
+      "answer": "Android 9 is not supported by the current Auto Request configuration. The intended Android versions are Android 12 and Android 13, together with the required resolution, display density, root access, and Accessibility Service.",
+      "keywords": ["Android 9", "older Android", "unsupported device", "compatibility"],
+      "enabled": true
+    },
+    {
+      "id": "auto_req_30",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "Will Auto Request work if my emulator has root access?",
+      "alternativeQuestions": [
+        "My emulator is rooted but automation fails",
+        "LDPlayer has root enabled",
+        "MuMu is rooted but clicks do not work",
+        "Does root guarantee emulator compatibility?"
+      ],
+      "answer": "No. Root access alone does not guarantee that an emulator is compatible. PC emulators such as LDPlayer and MuMu Player may still behave differently from the intended environment. Root, Accessibility Service, Android version, resolution, density, and folder configuration must all be compatible, and emulator support is not guaranteed.",
+      "keywords": ["rooted emulator", "LDPlayer", "MuMu", "emulator compatibility", "root access"],
+      "enabled": true
+    },
+    {
+      "id": "auto_req_31",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "Why does Auto Request work sometimes but fail at other times?",
+      "alternativeQuestions": [
+        "Automation works inconsistently",
+        "Sometimes it works and sometimes it does not",
+        "Random Auto Request errors",
+        "Why is automation unreliable?"
+      ],
+      "answer": "Intermittent failures can be caused by network delays, a blocking chest screen or dialogue, disabled permissions, or a mismatch between the account folders and Automation Settings. Confirm the required device configuration and check the exact screen where the failure occurs. A stable network can help reduce timing-related errors.",
+      "keywords": ["intermittent failure", "random error", "inconsistent automation", "network delay", "permissions"],
+      "enabled": true
+    },
+    {
+      "id": "auto_req_32",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "What should I do if Auto Request repeatedly misclicks despite a stable network?",
+      "alternativeQuestions": [
+        "Clicks are still wrong with good internet",
+        "Automation misclicks repeatedly",
+        "The network is fine but taps are inaccurate",
+        "Why does automation tap the wrong place?"
+      ],
+      "answer": "Check that the device is using the required 720 × 1280 resolution and 320 DPI, and that the game is not displaying an unexpected pop-up, chest screen, or dialogue. Confirm that the device and Android version are supported and avoid manually interacting with the game while automation is running. If the problem continues, contact support and provide the device model, Android version, and the screen where the misclick occurs.",
+      "keywords": ["repeated misclick", "wrong coordinates", "stable network", "resolution", "support"],
+      "enabled": true
+    },
+    {
+      "id": "auto_req_33",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "Can I manually use the game while Auto Request is running?",
+      "alternativeQuestions": [
+        "Can I tap the screen during automation?",
+        "Should I touch my phone while Auto Request runs?",
+        "Can I switch screens during automation?"
+      ],
+      "answer": "Avoid manually interacting with the game while Auto Request is running. Manual taps or screen changes may interfere with the automation's expected sequence and cause incorrect actions. Stop the automation before making manual changes, then restart it after the game is back in the expected state.",
+      "keywords": ["manual interaction", "touch screen", "during automation", "screen change", "interference"],
+      "enabled": true
+    },
+    {
+      "id": "auto_req_34",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "Why does Auto Request fail when the game shows a loading screen?",
+      "alternativeQuestions": [
+        "Automation starts before the game loads",
+        "The game is loading too slowly",
+        "Can loading delay cause errors?",
+        "Auto Request acts before the screen is ready"
+      ],
+      "answer": "If the game has not finished loading, the automation may attempt an action before the expected screen appears. This can cause misclicks or unexpected behavior. Make sure the network is stable, wait for the game to finish loading, and clear any blocking screen before restarting Auto Request.",
+      "keywords": ["loading screen", "loading delay", "network lag", "misclick", "screen not ready"],
+      "enabled": true
+    },
+    {
+      "id": "auto_req_35",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "What information should I provide when contacting support about Auto Request?",
+      "alternativeQuestions": [
+        "How do I report an automation problem?",
+        "What details does support need?",
+        "How can I get help with Auto Request?",
+        "What should I send to support?"
+      ],
+      "answer": "Describe the problem and the exact screen where automation stops or misclicks. Include your device model, Android version, screen resolution, display density, whether root access and Accessibility Service are enabled, and whether you are using a physical device or an emulator. Also explain your folder structure and configured account range. Do not share passwords, private account credentials, or other sensitive information.",
+      "keywords": ["contact support", "report issue", "device model", "error details", "troubleshooting"],
+      "enabled": true
+    },
+    {
+      "id": "auto_req_36",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "Does the folder name support spaces or special characters?",
+      "alternativeQuestions": [
+        "Can I put spaces in the folder name?",
+        "Can I use symbols in the folder name?",
+        "What characters are allowed?",
+        "Should I use a simple folder name?"
+      ],
+      "answer": "Use a simple folder name made from English letters and numbers. Avoid non-English characters and unnecessary symbols. The folder name must also match the name entered in Automation Settings exactly, including capitalization.",
+      "keywords": ["special characters", "spaces", "folder naming", "English characters", "folder name"],
+      "enabled": true
+    },
+    {
+      "id": "auto_req_37",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "Does each account need its own shared_prefs folder?",
+      "alternativeQuestions": [
+        "Where should shared_prefs be placed?",
+        "Can all accounts use one shared_prefs folder?",
+        "Should shared_prefs be inside each account directory?",
+        "My account folder has no shared_prefs"
+      ],
+      "answer": "The required structure places a shared_prefs directory inside each numbered account directory. For example: /storage/emulated/0/accounts/1/shared_prefs/ and /storage/emulated/0/accounts/2/shared_prefs/. Make sure the required directory exists for every account in the configured range.",
+      "keywords": ["shared_prefs", "each account", "account directory", "folder structure", "missing shared_prefs"],
+      "enabled": true
+    },
+    {
+      "id": "auto_req_38",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "Why does Auto Request not recognize my account folder even though it exists?",
+      "alternativeQuestions": [
+        "The folder is there but is not detected",
+        "Auto Request cannot recognize my directory",
+        "My storage path looks correct",
+        "Why is the account directory ignored?"
+      ],
+      "answer": "Verify the full path, folder spelling, capitalization, and account numbering. The main folder must be under the expected emulated storage location, the name must match Automation Settings exactly, and the numbered account directories must cover the configured range. Each account must contain its required shared_prefs folder.",
+      "keywords": ["folder not detected", "path error", "folder exists", "account directory", "case-sensitive"],
+      "enabled": true
+    },
+    {
+      "id": "auto_req_39",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "What should I do if I recently changed root or permission settings?",
+      "alternativeQuestions": [
+        "I changed root settings and now automation fails",
+        "I re-enabled Accessibility",
+        "Should I restart the app after changing permissions?",
+        "The app does not recognize my updated settings"
+      ],
+      "answer": "After changing root settings, especially when enabling root for the first time, force-stop Assistant and launch it again. Then confirm that root access is granted and Accessibility Service remains enabled. Retry Auto Request after checking the folder configuration and supported device requirements.",
+      "keywords": ["changed permissions", "root settings", "force-stop", "restart app", "accessibility"],
+      "enabled": true
+    },
+    {
+      "id": "auto_req_40",
+      "category": "automation",
+      "feature": "auto_request",
+      "primaryQuestion": "Auto Request is stuck. What should I try first?",
+      "alternativeQuestions": [
+        "Automation has frozen",
+        "Auto Request is not progressing",
+        "What is the first step when automation gets stuck?",
+        "The game is stuck during automation"
+      ],
+      "answer": "First, identify which screen is blocking progress. If it is a chest screen, stop Auto Request and use Chest Open where applicable. If it is a dialogue or blocking pop-up, use Fixing Dialogue where applicable. Check the network and confirm that the game has returned to the expected screen before restarting automation. If neither feature resolves the problem, contact support with the screen details.",
+      "keywords": ["automation stuck", "frozen", "chest screen", "dialogue", "Fixing Dialogue", "troubleshooting"],
+      "enabled": true
+    },
+    {
+      "id": "chest_01",
+      "category": "automation",
+      "feature": "chest_open",
+      "primaryQuestion": "How do I use Chest Open?",
+      "alternativeQuestions": [
+        "How to use chest open",
+        "How do I collect the daily chest?",
+        "How do I start the Chest Open feature?",
+        "Daily chest opener"
+      ],
+      "answer": "Chest Open automates daily chest collection. Configure the required options on the Chest Open settings screen and set the execution time there. If Auto Request becomes stuck on a chest screen, stop Auto Request and use Chest Open to handle the chest before restarting automation.",
+      "keywords": ["chest", "open", "opener", "daily", "collection", "settings"],
+      "enabled": true
+    }
+  ]
+}
+
