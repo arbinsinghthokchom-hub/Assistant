@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "faqs": [
     {
       "id": "auto_req_01",
@@ -615,7 +615,753 @@
       "answer": "Chest Open automates daily chest collection. Configure the required options on the Chest Open settings screen and set the execution time there. If Auto Request becomes stuck on a chest screen, stop Auto Request and use Chest Open to handle the chest before restarting automation.",
       "keywords": ["chest", "open", "opener", "daily", "collection", "settings"],
       "enabled": true
-    }
-  ]
+    },
+    {
+      "id": "donation_slot_01",
+    "category": "automation",
+    "feature": "Auto Donate",
+    "primaryQuestion": "What are donation slots?",
+    "alternativeQuestions": [
+      "What does donation slot mean?",
+      "What is a donation slot in Auto Donate?",
+      "What are slots in donation settings?",
+      "Explain donation slots",
+      "What does total donation slot mean?"
+    ],
+    "answer": "Donation slots represent the number of different troop types requested by your clanmates. In Auto Donate settings, the total number of slots you configure must be equal to or greater than the number of different troop types that may be requested at the same time.",
+    "keywords": ["donation slots", "total slots", "different troops", "Auto Donate"],
+    "enabled": true
+  },
+  {
+    "id": "donation_slot_02",
+    "category": "automation",
+    "feature": "Auto Donate",
+    "primaryQuestion": "How many donation slots should I set?",
+    "alternativeQuestions": [
+      "What is the correct total donation slot?",
+      "How many slots do I need?",
+      "How do I calculate total slots?",
+      "What should I enter in total donation slots?",
+      "How many different troop requests can Auto Donate handle?"
+    ],
+    "answer": "Set the total donation slots to match or exceed the maximum number of different troop types your clanmates may request at the same time. Count different troop types, not the total number of units requested. If two clanmates request the same troop type, that troop type occupies one slot, although the total units needed may be greater than one.",
+    "keywords": ["how many slots", "total donation slots", "calculate slots", "different troop types"],
+    "enabled": true
+  },
+  {
+    "id": "donation_slot_03",
+    "category": "automation",
+    "feature": "Auto Donate",
+    "primaryQuestion": "What is the difference between donation slots and units per slot?",
+    "alternativeQuestions": [
+      "What does units per slot mean?",
+      "Do slots count troops or units?",
+      "Why are there separate slot and unit settings?",
+      "Does one slot mean one troop?",
+      "Explain slots versus units"
+    ],
+    "answer": "Donation slots count different troop types, while Units per Slot specifies how many units of the corresponding troop type to donate. For example, if two clanmates request the same troop type and need one unit each, that troop type occupies one slot, but the required total is two units. Configure Units per Slot accordingly.",
+    "keywords": ["units per slot", "slot difference", "troop count", "same troops", "two units"],
+    "enabled": true
+  },
+  {
+    "id": "donation_slot_04",
+    "category": "automation",
+    "feature": "Auto Donate",
+    "primaryQuestion": "What happens if two clanmates request the same troop?",
+    "alternativeQuestions": [
+      "Do duplicate troop requests use two slots?",
+      "If two people request the same troop, how many slots are needed?",
+      "Will the same troop occupy multiple slots?",
+      "Two clanmates need the same troop",
+      "Does Auto Donate count duplicate troops separately?"
+    ],
+    "answer": "Two requests for the same troop type occupy only one distinct troop slot. However, the number of units required may be two or more. Set Units per Slot to the number of units needed for that troop type, based on the requests your clanmates may make.",
+    "keywords": ["same troop", "duplicate requests", "one slot", "two clanmates", "units per slot"],
+    "enabled": true
+  },
+  {
+    "id": "donation_slot_05",
+    "category": "automation",
+    "feature": "Auto Donate",
+    "primaryQuestion": "What happens if I set too few donation slots?",
+    "alternativeQuestions": [
+      "Why are some troop requests not handled?",
+      "My clanmates request more troop types than my slots",
+      "Can Auto Donate handle more troop types than configured?",
+      "What if the total slots are insufficient?",
+      "Why does Auto Donate miss some donations?"
+    ],
+    "answer": "If the number of different troop types requested exceeds your configured donation slots, Auto Donate may not handle all the requested troop types correctly. Set the total donation slots to match or exceed the maximum number of different troop types your clanmates may request.",
+    "keywords": ["too few slots", "missing donations", "more troop types", "insufficient slots"],
+    "enabled": true
+  },
+  {
+    "id": "donation_slot_06",
+    "category": "automation",
+    "feature": "Auto Donate",
+    "primaryQuestion": "Can I set more donation slots than the number of different troops requested?",
+    "alternativeQuestions": [
+      "Can total donation slots be higher?",
+      "Is it okay to configure extra slots?",
+      "Should slots match exactly?",
+      "Can I use more slots than necessary?"
+    ],
+    "answer": "Yes. Your configured total donation slots can be equal to or greater than the number of different troop types your clanmates request. Make sure the configured slots and Units per Slot values are appropriate for the requests you expect to handle.",
+    "keywords": ["extra slots", "more slots", "higher slot count", "slot configuration"],
+    "enabled": true
+  },
+  {
+    "id": "donation_slot_07",
+    "category": "automation",
+    "feature": "Auto Donate",
+    "primaryQuestion": "What is the recommended donation configuration for a Town Hall 12 clan?",
+    "alternativeQuestions": [
+      "What are the Auto Donate settings for TH12?",
+      "Give me the Town Hall 12 donation slot configuration",
+      "How should I configure donation slots for TH12?",
+      "What is the TH12 slot setup?"
+    ],
+    "answer": "For a Town Hall 12 clan, the usual configuration is S1 = 1, S2 = 2, and S3 = 1. This is a total of three configured slots. Use this setup as a starting point and adjust it if your clanmates request different troop types or need different quantities.",
+    "keywords": ["Town Hall 12", "TH12", "S1", "S2", "S3", "three slots"],
+    "enabled": true
+  },
+  {
+    "id": "donation_slot_08",
+    "category": "automation",
+    "feature": "Auto Donate",
+    "primaryQuestion": "What is the recommended donation configuration for a Town Hall 10 clan?",
+    "alternativeQuestions": [
+      "What are the Auto Donate settings for TH10?",
+      "Give me the Town Hall 10 donation slot configuration",
+      "How should I configure donation slots for TH10?",
+      "What is the TH10 slot setup?"
+    ],
+    "answer": "For a Town Hall 10 clan, the usual configuration is S1 = 1, S2 = 2, and S3 = 1. This is a total of three configured slots. Adjust the values if your clanmates' troop requests require a different setup.",
+    "keywords": ["Town Hall 10", "TH10", "S1", "S2", "S3", "three slots"],
+    "enabled": true
+  },
+  {
+    "id": "donation_slot_09",
+    "category": "automation",
+    "feature": "Auto Donate",
+    "primaryQuestion": "What is the recommended donation configuration for a Town Hall 16 clan?",
+    "alternativeQuestions": [
+      "What are the Auto Donate settings for TH16?",
+      "Give me the Town Hall 16 donation slot configuration",
+      "How should I configure donation slots for TH16?",
+      "What is the TH16 slot setup?"
+    ],
+    "answer": "For a Town Hall 16 clan, the usual configuration is S1 = 1, S2 = 2, S3 = 1, S4 = 2, S5 = 1, and S6 = 1 or 0. This configuration has six slots, with the sixth slot optional according to your setup. Choose values based on the different troop types and quantities your clanmates commonly request.",
+    "keywords": ["Town Hall 16", "TH16", "S1", "S2", "S3", "S4", "S5", "S6", "six slots"],
+    "enabled": true
+  },
+  {
+    "id": "donation_slot_10",
+    "category": "automation",
+    "feature": "Auto Donate",
+    "primaryQuestion": "How do I configure donation slots?",
+    "alternativeQuestions": [
+      "How to set up Auto Donate slots?",
+      "Where do I enter S1 and S2?",
+      "How do I set Units per Slot?",
+      "How should I configure the donation settings?",
+      "How do I set the total number of donation slots?"
+    ],
+    "answer": "Open the Auto Donate settings in Assistant and configure the available donation slots and their Units per Slot values. Set the total slots to match or exceed the maximum number of different troop types your clanmates may request. Then set the units for each slot according to the quantities needed. Use the recommended configuration for your clan's Town Hall level as a starting point.",
+    "keywords": ["configure donation slots", "Auto Donate settings", "S1", "Units per Slot", "setup"],
+    "enabled": true
+  },
+  {
+    "id": "donation_slot_11",
+    "category": "automation",
+    "feature": "Auto Attack",
+    "primaryQuestion": "Do donation slot settings matter in Auto Attack?",
+    "alternativeQuestions": [
+      "Does Auto Attack use donation slots?",
+      "Why do donation slots matter in Auto Attack?",
+      "Do I need to configure donation slots for Auto Attack?",
+      "Are Auto Donate and Auto Attack donation settings related?"
+    ],
+    "answer": "Yes. Configure the donation slot settings appropriately for Auto Attack and Auto Donate wherever those settings are used by the feature. The total slots must be sufficient for the different troop types your clanmates may request, and Units per Slot must reflect the quantities needed.",
+    "keywords": ["Auto Attack", "donation slots", "Auto Donate", "units per slot"],
+    "enabled": true
+  },
+  {
+    "id": "donation_slot_12",
+    "category": "automation",
+    "feature": "Auto Donate",
+    "primaryQuestion": "Why are some troop donations missing even though I configured donation slots?",
+    "alternativeQuestions": [
+      "Auto Donate does not donate every troop",
+      "Some requested troops are skipped",
+      "Why are not all troop types donated?",
+      "I have enough slots but donations still fail"
+    ],
+    "answer": "First, check whether your total donation slots cover all different troop types being requested. Next, check whether Units per Slot is sufficient when multiple clanmates request the same troop type. If the settings appear correct, review the rest of your automation configuration and contact support with the affected troop requests and your slot settings.",
+    "keywords": ["missing troops", "donations skipped", "enough slots", "units per slot", "troubleshooting"],
+    "enabled": true
+  },
+  {
+    "id": "donation_slot_13",
+    "category": "automation",
+    "feature": "Auto Donate",
+    "primaryQuestion": "Why does Auto Donate fail when two clanmates request the same troop?",
+    "alternativeQuestions": [
+      "Two requests for one troop are not both fulfilled",
+      "Same troop requested twice but only one is donated",
+      "Why are duplicate troop requests not fully handled?",
+      "Does the unit quantity need to be increased?"
+    ],
+    "answer": "The same troop type occupies one distinct slot, but the total quantity required may be greater than one. Check the Units per Slot value for that troop type. For example, if two clanmates each need one unit of the same troop, the required quantity is two units, even though only one distinct troop slot is needed.",
+    "keywords": ["same troop requested twice", "duplicate requests", "donation quantity", "Units per Slot"],
+    "enabled": true
+  },
+  {
+    "id": "donation_slot_14",
+    "category": "automation",
+    "feature": "Auto Donate",
+    "primaryQuestion": "Should I change donation slots when my clan's requests change?",
+    "alternativeQuestions": [
+      "Do I need to update slots for different troops?",
+      "My clanmates now request different troops",
+      "When should I change the slot configuration?",
+      "Should I adjust Units per Slot?"
+    ],
+    "answer": "Yes. Review your donation configuration when your clanmates begin requesting different troop types or different quantities. Increase the total slots if more distinct troop types may be requested, and adjust Units per Slot if more or fewer units of a troop type are needed.",
+    "keywords": ["change slots", "different requests", "update configuration", "troop quantities"],
+    "enabled": true
+  },
+  {
+    "id": "donation_slot_15",
+    "category": "automation",
+    "feature": "Auto Donate",
+    "primaryQuestion": "Does the Town Hall level determine the exact number of donation slots?",
+    "alternativeQuestions": [
+      "Are slots fixed by Town Hall level?",
+      "Can I use the TH12 setup in another clan?",
+      "Are the recommended configurations mandatory?",
+      "Can I change the recommended slot values?"
+    ],
+    "answer": "The Town Hall-based configurations are recommended starting points, not a substitute for checking actual clan requests. Choose enough slots for the different troop types your clanmates may request, and set Units per Slot to cover the quantities needed.",
+    "keywords": ["Town Hall level", "recommended settings", "slot count", "custom configuration"],
+    "enabled": true
+  },
+  {
+    "id": "donation_slot_16",
+    "category": "automation",
+    "feature": "Auto Donate",
+    "primaryQuestion": "What should I check before starting Auto Donate?",
+    "alternativeQuestions": [
+      "Auto Donate checklist",
+      "How do I avoid donation slot mistakes?",
+      "What should I verify before running donations?",
+      "How can I check my donation settings?"
+    ],
+    "answer": "Before starting Auto Donate, check that the total donation slots cover the different troop types your clanmates may request, that Units per Slot covers the required quantities, and that your configuration suits your clan's usual requests. Remember that two requests for the same troop type use one distinct slot but may require multiple units.",
+    "keywords": ["checklist", "before starting", "donation settings", "slot mistakes"],
+    "enabled": true
+  },
+  {
+    "id": "donation_slot_17",
+    "category": "automation",
+    "feature": "Auto Donate",
+    "primaryQuestion": "My total donation slots are correct, but donations still do not work. What should I do?",
+    "alternativeQuestions": [
+      "Slots are correct but Auto Donate fails",
+      "Donation settings seem right but it does not work",
+      "What if increasing slots does not fix donations?",
+      "Troubleshoot Auto Donate"
+    ],
+    "answer": "Check both settings separately: the total number of slots must cover the different troop types requested, and Units per Slot must cover the number of units needed for each type. If both are correct, check your other automation settings and contact support with your configuration and an example of a request that failed.",
+    "keywords": ["slots correct", "donation failure", "troubleshooting", "units per slot"],
+    "enabled": true
+  },
+  {
+    "id": "donation_slot_18",
+    "category": "automation",
+    "feature": "Auto Donate",
+    "primaryQuestion": "What does S1 = 1 and S2 = 2 mean?",
+    "alternativeQuestions": [
+      "Explain S1 and S2 values",
+      "What do the numbers beside donation slots mean?",
+      "Does S2 = 2 mean two troop types?",
+      "How do I read the slot configuration?"
+    ],
+    "answer": "S1, S2, and the other S labels refer to individual configured slots. The number assigned to each slot is its Units per Slot value. For example, S1 = 1, S2 = 2, and S3 = 1 means three configured slots with unit quantities of one, two, and one respectively. S2 = 2 does not mean two different troop types.",
+    "keywords": ["S1", "S2", "S3", "slot values", "Units per Slot", "configuration meaning"],
+    "enabled": true
+  },
+  {
+    "id": "donation_slot_19",
+    "category": "automation",
+    "feature": "Auto Donate",
+    "primaryQuestion": "Can I set S6 to 0 for Town Hall 16?",
+    "alternativeQuestions": [
+      "Should S6 be zero for TH16?",
+      "Is the sixth donation slot optional?",
+      "When can I set S6 = 0?",
+      "What if I do not need the sixth slot?"
+    ],
+    "answer": "For the usual Town Hall 16 configuration, S6 may be set to 1 or 0 depending on your setup. Use S6 = 0 only when that slot is not needed. Make sure the overall configuration still covers the different troop types and quantities your clanmates may request.",
+    "keywords": ["S6", "S6 = 0", "TH16", "optional slot", "sixth slot"],
+    "enabled": true
+  },
+  {
+    "id": "donation_slot_20",
+    "category": "automation",
+    "feature": "Auto Donate",
+    "primaryQuestion": "Does one donation slot mean one clanmate?",
+    "alternativeQuestions": [
+      "Is each slot assigned to one clanmate?",
+      "Do slots count people or troop types?",
+      "Does one clanmate use one slot?",
+      "Are slots based on the number of requests?"
+    ],
+    "answer": "No. Donation slots represent different troop types, not individual clanmates. Multiple clanmates requesting the same troop type occupy one distinct troop slot, but the total number of units needed may increase.",
+    "keywords": ["one slot per clanmate", "people versus troop types", "requests", "same troop"],
+    "enabled": true
+  },
+  {
+    "id": "army_deploy_01",
+    "category": "automation",
+    "feature": "auto_attack",
+    "primaryQuestion": "Why does army deployment fail during automation?",
+    "alternativeQuestions": [
+      "Auto Attack fails to deploy troops",
+      "Why are my troops not deploying correctly?",
+      "The army deployment is not working",
+      "Why does automation fail when deploying the army?",
+      "Troops are not being deployed properly"
+    ],
+    "answer": "Before starting Auto Attack, Auto Donate, or Wall Upgrade, set the in-game Army Deployment Bar Size to Minimum. The default size is not Minimum, so you must change it manually before running automation. If the bar size is incorrect, the automation may fail to deploy troops or select the wrong deployment slots.",
+    "keywords": [
+      "army deployment",
+      "deployment failure",
+      "Auto Attack",
+      "Auto Donate",
+      "Wall Upgrade",
+      "deployment bar",
+      "minimum size"
+    ],
+    "enabled": true
+  },
+  {
+    "id": "army_deploy_02",
+    "category": "automation",
+    "feature": "auto_attack",
+    "primaryQuestion": "How do I set the Army Deployment Bar Size to Minimum?",
+    "alternativeQuestions": [
+      "Where do I change deployment bar size?",
+      "How do I make the army bar minimum size?",
+      "What deployment bar setting should I use?",
+      "Should I use the default deployment bar size?",
+      "What is the correct army bar size for automation?"
+    ],
+    "answer": "Open the game's settings and locate the Army Deployment Bar Size option. Change it to Minimum before starting Auto Attack, Auto Donate, or Wall Upgrade. Do not leave it at the default size. This setting is required for the automation to select and deploy the correct army slots.",
+    "keywords": [
+      "deployment bar size",
+      "minimum",
+      "game settings",
+      "army bar",
+      "default size",
+      "configuration"
+    ],
+    "enabled": true
+  },
+  {
+    "id": "army_deploy_03",
+    "category": "automation",
+    "feature": "auto_attack",
+    "primaryQuestion": "Why must the Army Deployment Bar Size be set to Minimum?",
+    "alternativeQuestions": [
+      "Why is minimum deployment bar size required?",
+      "What happens if I use the default bar size?",
+      "Does deployment bar size affect Auto Attack?",
+      "Why does army deployment fail with the default setting?"
+    ],
+    "answer": "Assistant's army deployment automation expects the deployment bar to use the Minimum size. The default setting may change the positions or layout of deployment slots, causing the automation to select or deploy the wrong units. Set the bar size to Minimum before starting the supported automation features.",
+    "keywords": [
+      "minimum bar size",
+      "default deployment bar",
+      "wrong deployment",
+      "deployment layout",
+      "Auto Attack settings"
+    ],
+    "enabled": true
+  },
+  {
+    "id": "army_deploy_04",
+    "category": "automation",
+    "feature": "auto_attack",
+    "primaryQuestion": "Does the minimum deployment bar setting apply to Auto Donate?",
+    "alternativeQuestions": [
+      "Do I need minimum bar size for Auto Donate?",
+      "Auto Donate is not deploying troops",
+      "Does Auto Donate use the deployment bar?",
+      "What settings are required for automatic donation?"
+    ],
+    "answer": "Yes. Set the in-game Army Deployment Bar Size to Minimum before starting Auto Donate. The default size is not the required setting and may cause deployment failures.",
+    "keywords": [
+      "Auto Donate",
+      "donation failure",
+      "deployment bar",
+      "minimum size",
+      "troop donation"
+    ],
+    "enabled": true
+  },
+  {
+    "id": "army_deploy_05",
+    "category": "automation",
+    "feature": "wall_upgrade",
+    "primaryQuestion": "Does Wall Upgrade require the minimum Army Deployment Bar Size?",
+    "alternativeQuestions": [
+      "Wall Upgrade is not working correctly",
+      "What deployment bar setting is needed for Wall Upgrade?",
+      "Do I need to change the deployment bar before Wall Upgrade?",
+      "Why does Wall Upgrade fail during deployment?"
+    ],
+    "answer": "Yes. Before starting Wall Upgrade, change the in-game Army Deployment Bar Size to Minimum. Do not use the default size. An incorrect deployment bar configuration may cause the automation to select the wrong slot or fail during deployment.",
+    "keywords": [
+      "Wall Upgrade",
+      "wall automation",
+      "deployment bar",
+      "minimum",
+      "deployment failure"
+    ],
+    "enabled": true
+  },
+  {
+    "id": "army_management_01",
+    "category": "automation",
+    "feature": "auto_attack",
+    "primaryQuestion": "Where can I find Army Management settings?",
+    "alternativeQuestions": [
+      "Where is Army Management?",
+      "How do I open Army Management?",
+      "Where do I configure army slots?",
+      "How do I access the army configuration?"
+    ],
+    "answer": "Open Auto Attack in Assistant, then open Army Management. Configure the army slots there. The number of configured slots and the type of unit assigned to each slot must match the actual in-game Army Deployment Bar.",
+    "keywords": [
+      "Army Management",
+      "Auto Attack",
+      "army settings",
+      "army slots",
+      "configuration"
+    ],
+    "enabled": true
+  },
+  {
+    "id": "army_management_02",
+    "category": "automation",
+    "feature": "auto_attack",
+    "primaryQuestion": "Why must Army Management slots match the in-game deployment bar?",
+    "alternativeQuestions": [
+      "Why is my army configuration not working?",
+      "Do Army Management and the game need the same slots?",
+      "Why does Assistant deploy the wrong unit?",
+      "What happens if army slots do not match?"
+    ],
+    "answer": "The slot configuration in Assistant's Army Management must match the actual in-game Army Deployment Bar. Both the total number of slots and the type of unit assigned to each corresponding slot must match. If they differ, Assistant may select the wrong unit or fail during army deployment.",
+    "keywords": [
+      "army slot mismatch",
+      "Army Management",
+      "deployment bar",
+      "wrong unit",
+      "slot configuration"
+    ],
+    "enabled": true
+  },
+  {
+    "id": "army_management_03",
+    "category": "automation",
+    "feature": "auto_attack",
+    "primaryQuestion": "Does the number of Army Management slots need to match the game?",
+    "alternativeQuestions": [
+      "How many slots should I configure?",
+      "My army has more slots than Assistant",
+      "Assistant has a different number of army slots",
+      "Why is the slot count important?",
+      "Can I use a different number of slots?"
+    ],
+    "answer": "Yes. The number of slots configured in Assistant's Army Management must match the actual number of slots in the in-game Army Deployment Bar. Do not configure more or fewer slots than the game displays. Also make sure each slot contains the correct type of unit in the correct position.",
+    "keywords": [
+      "slot count",
+      "number of slots",
+      "Army Management",
+      "deployment bar",
+      "slot mismatch"
+    ],
+    "enabled": true
+  },
+  {
+    "id": "army_management_04",
+    "category": "automation",
+    "feature": "auto_attack",
+    "primaryQuestion": "Does the order of army slots matter?",
+    "alternativeQuestions": [
+      "Can I arrange troops in any order?",
+      "Why does Assistant select the wrong army slot?",
+      "Does slot position matter?",
+      "Can I rearrange my deployment bar?",
+      "Do army units need to be in a specific order?"
+    ],
+    "answer": "Yes. The order of slots matters. The units configured in Assistant's Army Management must match the corresponding slots in the in-game Army Deployment Bar, position by position. Matching only the total number of slots is not enough. For example, if the first slot in Assistant is configured as a troop, the first in-game deployment slot must also contain a troop.",
+    "keywords": [
+      "slot order",
+      "slot position",
+      "army arrangement",
+      "wrong slot",
+      "unit order",
+      "deployment sequence"
+    ],
+    "enabled": true
+  },
+  {
+    "id": "army_management_05",
+    "category": "automation",
+    "feature": "auto_attack",
+    "primaryQuestion": "What should be in the first Army Management slot?",
+    "alternativeQuestions": [
+      "What unit goes in slot one?",
+      "Should the first slot be a troop?",
+      "Why does the first slot need to match?",
+      "What should my first deployment slot contain?"
+    ],
+    "answer": "The first slot configured in Assistant's Army Management must match the first slot in the in-game Army Deployment Bar. If Assistant's first slot is configured as a troop, the first in-game slot must also contain a troop. Apply the same position-by-position matching rule to every remaining slot.",
+    "keywords": [
+      "first slot",
+      "slot one",
+      "troop",
+      "Army Management",
+      "deployment order"
+    ],
+    "enabled": true
+  },
+  {
+    "id": "army_management_06",
+    "category": "automation",
+    "feature": "auto_attack",
+    "primaryQuestion": "Do troop, spell, hero, and Siege Machine slots need to match?",
+    "alternativeQuestions": [
+      "How should I arrange troop and spell slots?",
+      "Do heroes need to be in the correct positions?",
+      "Does the Siege Machine slot position matter?",
+      "Why are spells or heroes deployed incorrectly?",
+      "How do I match every army slot?"
+    ],
+    "answer": "Yes. Match every slot in Assistant's Army Management with the corresponding slot in the in-game Army Deployment Bar. Troops must match troop slots, spells must match spell slots, heroes must match hero slots, and the Siege Machine must match its corresponding slot. Keep both the slot count and the position of each unit type consistent.",
+    "keywords": [
+      "troops",
+      "spells",
+      "heroes",
+      "Siege Machine",
+      "slot type",
+      "slot position",
+      "army matching"
+    ],
+    "enabled": true
+  },
+  {
+    "id": "army_management_07",
+    "category": "automation",
+    "feature": "auto_attack",
+    "primaryQuestion": "My army slot count matches, but deployment still fails. Why?",
+    "alternativeQuestions": [
+      "The number of slots is correct but troops deploy incorrectly",
+      "Army Management matches the slot count but not the deployment",
+      "Why does deployment fail even with the correct number of slots?",
+      "I configured the correct number of slots"
+    ],
+    "answer": "Matching the number of slots alone is not sufficient. The type of unit in every slot and its position must also match the in-game Army Deployment Bar. Check the troop, spell, hero, and Siege Machine positions in Assistant's Army Management against the actual game slots. Also confirm that the deployment bar size is set to Minimum.",
+    "keywords": [
+      "correct slot count",
+      "wrong slot type",
+      "deployment failure",
+      "army mismatch",
+      "minimum bar size"
+    ],
+    "enabled": true
+  },
+  {
+    "id": "army_management_08",
+    "category": "automation",
+    "feature": "auto_attack",
+    "primaryQuestion": "Why are the wrong troops or spells being deployed?",
+    "alternativeQuestions": [
+      "Assistant deploys the wrong troop",
+      "My spells are selected incorrectly",
+      "The wrong hero is being selected",
+      "The Siege Machine is not selected correctly",
+      "Automation selects the wrong deployment slot"
+    ],
+    "answer": "Check the slot order in Assistant's Army Management. Each configured slot must match the corresponding slot in the in-game Army Deployment Bar, including the unit type and position. Confirm that the total number of slots matches and that the deployment bar size is set to Minimum before restarting Auto Attack.",
+    "keywords": [
+      "wrong troops",
+      "wrong spells",
+      "wrong hero",
+      "Siege Machine",
+      "incorrect selection",
+      "slot order"
+    ],
+    "enabled": true
+  },
+  {
+    "id": "army_management_09",
+    "category": "automation",
+    "feature": "auto_attack",
+    "primaryQuestion": "What should I check before starting Auto Attack?",
+    "alternativeQuestions": [
+      "Auto Attack setup checklist",
+      "How do I prepare my army for Auto Attack?",
+      "What settings are required before attacking?",
+      "Why does Auto Attack fail at the beginning?"
+    ],
+    "answer": "Before starting Auto Attack, set the in-game Army Deployment Bar Size to Minimum. Then open Assistant > Auto Attack > Army Management and verify that the number of slots, slot order, and unit types match the in-game deployment bar exactly. Check troop, spell, hero, and Siege Machine positions before starting automation.",
+    "keywords": [
+      "Auto Attack checklist",
+      "preparation",
+      "Army Management",
+      "deployment bar",
+      "minimum size",
+      "army slots"
+    ],
+    "enabled": true
+  },
+  {
+    "id": "army_management_10",
+    "category": "automation",
+    "feature": "auto_attack",
+    "primaryQuestion": "I changed my in-game army composition. Do I need to update Army Management?",
+    "alternativeQuestions": [
+      "I changed my troops and now automation fails",
+      "Do I need to reconfigure Assistant after changing my army?",
+      "My army composition has changed",
+      "I added or removed spells, heroes, or troops"
+    ],
+    "answer": "Yes. Whenever a change to your in-game army affects the deployment bar's slot count, slot order, or unit types, update Assistant's Army Management to match the new configuration. Confirm that every corresponding slot matches and that the deployment bar remains set to Minimum before starting automation.",
+    "keywords": [
+      "army composition changed",
+      "update Army Management",
+      "new troops",
+      "changed spells",
+      "changed heroes",
+      "slot order"
+    ],
+    "enabled": true
+  },
+  {
+    "id": "army_management_11",
+    "category": "automation",
+    "feature": "auto_attack",
+    "primaryQuestion": "What is the correct way to match Army Management with the deployment bar?",
+    "alternativeQuestions": [
+      "How do I configure army slots correctly?",
+      "How do I compare Assistant slots with game slots?",
+      "What is the correct army slot arrangement?",
+      "How do I prevent army deployment errors?"
+    ],
+    "answer": "Open the game and inspect the Army Deployment Bar. Then open Assistant > Auto Attack > Army Management. Compare the slots from left to right. The total number of slots must match, and each corresponding position must contain the same type of unit, such as a troop, spell, hero, or Siege Machine. Finally, set the in-game deployment bar size to Minimum.",
+    "keywords": [
+      "match army slots",
+      "left to right",
+      "deployment configuration",
+      "Army Management",
+      "army deployment errors"
+    ],
+    "enabled": true
+  },
+  {
+    "id": "army_management_12",
+    "category": "automation",
+    "feature": "auto_attack",
+    "primaryQuestion": "I set the deployment bar to Minimum, but army deployment still fails. What should I do?",
+    "alternativeQuestions": [
+      "Minimum bar size did not fix deployment",
+      "Army deployment still fails after changing settings",
+      "I already changed the bar size",
+      "Auto Attack still deploys incorrectly"
+    ],
+    "answer": "Next, open Assistant > Auto Attack > Army Management. Verify that its slot count matches the in-game deployment bar and that every slot contains the correct unit type in the same position. Check troops, spells, heroes, and the Siege Machine individually. If the configuration is correct and deployment still fails, contact support and describe which units or slots are affected.",
+    "keywords": [
+      "minimum bar size",
+      "deployment still failing",
+      "Army Management",
+      "slot configuration",
+      "contact support"
+    ],
+    "enabled": true
+  },
+  {
+    "id": "army_management_13",
+    "category": "automation",
+    "feature": "auto_attack",
+    "primaryQuestion": "Can I configure the same number of slots but arrange them differently?",
+    "alternativeQuestions": [
+      "Can I use a different army slot order?",
+      "Does the exact order matter if the count matches?",
+      "Can I move spells to different positions?",
+      "Can I change hero or Siege Machine positions?"
+    ],
+    "answer": "No. Matching only the total slot count is not enough. Assistant's Army Management must match the in-game deployment bar position by position. If a troop, spell, hero, or Siege Machine is in a different position, automation may select the wrong slot or fail to deploy the intended unit.",
+    "keywords": [
+      "different slot order",
+      "same slot count",
+      "rearrange army",
+      "position mismatch",
+      "deployment failure"
+    ],
+    "enabled": true
+  },
+  {
+    "id": "army_management_14",
+    "category": "automation",
+    "feature": "auto_attack",
+    "primaryQuestion": "Why does Auto Attack fail after I change my army deployment bar settings?",
+    "alternativeQuestions": [
+      "I changed the deployment bar and Auto Attack stopped working",
+      "Army automation failed after changing the bar",
+      "Do I need to update Assistant after changing deployment settings?",
+      "The deployment layout has changed"
+    ],
+    "answer": "Changing the deployment bar settings or army arrangement may affect the positions and number of slots that Assistant expects. Set the deployment bar size to Minimum and compare the in-game slots with Assistant > Auto Attack > Army Management. Ensure that both the slot count and each slot's unit type and position match before running Auto Attack again.",
+    "keywords": [
+      "deployment bar changed",
+      "Auto Attack failure",
+      "army arrangement",
+      "slot positions",
+      "Army Management"
+    ],
+    "enabled": true
+  },
+  {
+    "id": "auto_req_clan_capital_01",
+    "category": "automation",
+    "feature": "auto_request",
+    "primaryQuestion": "Why does the Clan Capital pop-up appear, and how do I fix it?",
+    "alternativeQuestions": [
+      "Why does the Clan Capital pop-up keep appearing?",
+      "How do I fix the Clan Capital dialogue?",
+      "Auto Request is stuck on Clan Capital",
+      "Why does Clan Capital appear when joining a clan?",
+      "The Clan Capital pop-up is blocking automation",
+      "How do I get past the Clan Capital screen?",
+      "Why does my account show Clan Capital for the first time?"
+    ],
+    "answer": "This pop-up may appear when an account joins a clan above Level 1 for the first time, especially if the account has never previously joined a clan above Level 1. The game displays the Clan Capital introduction or related pop-up. Currently, Assistant cannot handle this pop-up automatically. You must manually open the game, complete or dismiss the Clan Capital pop-up, and make sure the game returns to its normal screen before starting Auto Request again.",
+    "keywords": [
+      "Clan Capital",
+      "clan capital popup",
+      "clan level",
+      "first time joining clan",
+      "Level 1 clan",
+      "automation stuck",
+      "manual fix",
+      "pop-up"
+    ],
+    "enabled": true
+  }
+]
 }
-
