@@ -1,5 +1,5 @@
 {
-  "version": 42,
+  "version": 43,
   "templates": [
     "apprentice_warden.png",
     "archer.png",
@@ -115,6 +115,7 @@
     "age_filling.png",
     "log_me_in_coc.png",
     "set_reinforcement.png",
+    "build.png",
     "upgrade_more.png"
   ]
 }
