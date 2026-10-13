@@ -1,5 +1,5 @@
 {
-  "version": 43,
+  "version": 51,
   "templates": [
     "apprentice_warden.png",
     "archer.png",
@@ -116,6 +116,10 @@
     "log_me_in_coc.png",
     "set_reinforcement.png",
     "build.png",
+    "home_attack.png",
+    "maximise_clan_war.png",
+    "minimise_clan_war.png",
+    "clan_chat.png",
     "upgrade_more.png"
   ]
 }
