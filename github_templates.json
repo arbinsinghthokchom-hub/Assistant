@@ -1,5 +1,5 @@
 {
-  "version": 53,
+  "version": 54,
   "templates": [
     "apprentice_warden.png",
     "archer.png",
@@ -121,6 +121,7 @@
     "minimise_clan_war.png",
     "clan_chat.png",
     "open_message.png",
+    "upgrade_small.png",
     "upgrade_more.png"
   ]
 }
