@@ -1,5 +1,5 @@
 {
-  "version": 55,
+  "version": 56,
   "templates": [
     "apprentice_warden.png",
     "archer.png",
@@ -82,7 +82,6 @@
     "card.png",
     "claim_reward.png",
     "upgrade_wall.png",
-    "donation_page_available.png",
     "clash_of_clans.webp",
     "event_reward.png",
     "townhall16.png",
@@ -122,6 +121,31 @@
     "clan_chat.png",
     "open_message.png",
     "upgrade_small.png",
-    "upgrade_more.png"
+    "upgrade_more.png",
+    "battle.png",
+    "battle_baby_dragon.png",
+    "battle_baby_dragon_dead.png",
+    "battle_copter.png",
+    "battle_copter_dead.png",
+    "battle_machine.png",
+    "battle_machine_dead.png",
+    "battle_pekka.png",
+    "battle_pekka_dead.png",
+    "battle_witch.png",
+    "battle_witch_dead.png",
+    "battle_barbarian.png",
+    "battle_barbarian_dead.png",
+    "boat.png",
+    "collect.png",
+    "delete.png",
+    "edit_army.png",
+    "edit_baby_dragon.png",
+    "edit_battle_copter.png",
+    "edit_battle_machine.png",
+    "edit_pekka.png",
+    "edit_witch.png",
+    "edit_barbarian.png",
+    "find_now.png",
+    "1x.png"
   ]
 }
