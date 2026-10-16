@@ -1,5 +1,5 @@
 {
-  "version": 62,
+  "version": 64,
   "templates": [
     "apprentice_warden.png",
     "archer.png",
@@ -153,6 +153,12 @@
     "return_home_night.png",
     "upgrade_mini_1.png",
     "upgrade_mini_2.png",
+    "night_witch_logo.webp",
+    "pekka_logo.webp",
+    "baby_dragon_logo.webp",
+    "battle_copter_logo.webp",
+    "battle_machine_logo.webp",
+    "night_village.jpg",
     "1x.png"
   ]
 }
