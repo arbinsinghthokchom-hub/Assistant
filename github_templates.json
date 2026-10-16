@@ -1,5 +1,5 @@
 {
-  "version": 60,
+  "version": 61,
   "templates": [
     "apprentice_warden.png",
     "archer.png",
@@ -150,6 +150,7 @@
     "loot_cart_collect.png",
     "loot_cart_a.png",
     "loot_cart_b.png",
+    "return_home_night",
     "1x.png"
   ]
 }
