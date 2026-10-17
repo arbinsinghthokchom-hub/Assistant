@@ -1,5 +1,5 @@
 {
-  "version": 65,
+  "version": 66,
   "templates": [
     "apprentice_warden.png",
     "archer.png",
@@ -160,6 +160,7 @@
     "battle_machine_logo.webp",
     "night_village.jpg",
     "try_again.png",
+    "okay_for_star_bonus.png",
     "1x.png"
   ]
 }
