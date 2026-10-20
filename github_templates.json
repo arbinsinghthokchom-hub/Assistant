@@ -1,5 +1,5 @@
 {
-  "version": 67,
+  "version": 68,
   "templates": [
     "apprentice_warden.png",
     "archer.png",
@@ -161,6 +161,7 @@
     "night_village.jpg",
     "try_again.png",
     "okay_for_star_bonus.png",
+    "single_player.png",
     "1x.png"
   ]
 }
