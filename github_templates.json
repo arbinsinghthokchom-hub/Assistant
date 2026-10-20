@@ -1,5 +1,5 @@
 {
-  "version": 68,
+  "version": 70,
   "templates": [
     "apprentice_warden.png",
     "archer.png",
@@ -162,6 +162,7 @@
     "try_again.png",
     "okay_for_star_bonus.png",
     "single_player.png",
+    "return_home.png",
     "1x.png"
   ]
 }
