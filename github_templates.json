@@ -1,5 +1,5 @@
 {
-  "version": 72,
+  "version": 73,
   "templates": [
     "apprentice_warden.png",
     "archer.png",
@@ -165,6 +165,8 @@
     "return_home.png",
     "2nd_entry.png",
     "dialogue_border.png",
+    "chest_okay.png",
+    "chest_hammer.png",
     "1x.png"
   ]
 }
