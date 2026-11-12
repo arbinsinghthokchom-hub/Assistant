@@ -1,5 +1,5 @@
 {
-  "version": 77,
+  "version": 78,
   "templates": [
     "apprentice_warden.png",
     "archer.png",
@@ -169,6 +169,7 @@
     "chest_hammer.png",
     "vsphone.png",
     "chest_okay_chinese.png",
+    "ready.png",
     "1x.png"
   ]
 }
