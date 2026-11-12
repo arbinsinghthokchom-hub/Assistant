@@ -1,5 +1,5 @@
 {
-  "version": 79,
+  "version": 80,
   "templates": [
     "apprentice_warden.png",
     "archer.png",
@@ -171,6 +171,7 @@
     "chest_okay_chinese.png",
     "request_screen.png",
     "ready.png",
+    "ready_2.png",
     "1x.png"
   ]
 }
