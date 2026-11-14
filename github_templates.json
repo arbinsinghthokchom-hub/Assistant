@@ -1,5 +1,5 @@
 {
-  "version": 81,
+  "version": 82,
   "templates": [
     "apprentice_warden.png",
     "archer.png",
@@ -175,6 +175,9 @@
     "tools_close.png",
     "tools_open.png",
     "edit_village_entry.png",
+    "attack_barbarian.png",
+    "attack_wizard.png",
+    "info.png",
     "1x.png"
   ]
 }
