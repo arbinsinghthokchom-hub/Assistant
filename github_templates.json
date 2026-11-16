@@ -1,5 +1,5 @@
 {
-  "version": 82,
+  "version": 83,
   "templates": [
     "apprentice_warden.png",
     "archer.png",
@@ -178,6 +178,7 @@
     "attack_barbarian.png",
     "attack_wizard.png",
     "info.png",
+    "star_chest.png",
     "1x.png"
   ]
 }
