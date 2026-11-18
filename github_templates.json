@@ -1,5 +1,5 @@
 {
-  "version": 85,
+  "version": 86,
   "templates": [
     "apprentice_warden.png",
     "archer.png",
@@ -206,7 +206,7 @@
     "bomb_tower.png",
     "air_sweeper.png",
     "hidden_tesla.png",
-    "bow.png",
+    "x_bow.png",
     "inferno_tower.png",
     "eagle_artillery.png",
     "scattershot.png",
@@ -216,7 +216,7 @@
     "giant_bomb.png",
     "spring_trap.png",
     "air_bomb.png",
-    "air_seeking_mine.png",
+    "seeking_air_mine.png",
     "tornado_trap.png",
     "giga_bomb.png",
     "wall.png"
