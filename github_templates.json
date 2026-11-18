@@ -1,5 +1,5 @@
 {
-  "version": 87,
+  "version": 90,
   "templates": [
     "apprentice_warden.png",
     "archer.png",
@@ -219,6 +219,31 @@
     "seeking_air_mine.png",
     "tornado_trap.png",
     "giga_bomb.png",
-    "wall.png"
+    "wall.png",
+    "power_potion.png",
+    "resource_potion.png",
+    "pet_potion.png",
+    "hero_potion.png",
+    "super_potion.png",
+    "clock_tower_potion.png",
+    "builder_star_jar.png",
+    "shovel_of_obstacles.png",
+    "hammer_of_fighting.png",
+    "hammer_of_spells.png",
+    "hammer_of_heroes.png",
+    "hammer_of_buildings.png",
+    "rune_of_gold.png",
+    "rune_of_elixir.png",
+    "rune_of_dark_elixir.png",
+    "rune_of_builder_gold.png",
+    "rune_of_builder_elixir.png",
+    "wall_ring.png",
+    "builder_potion.png",
+    "research_potion.png",
+    "book_of_spells.png",
+    "book_of_heroes.png",
+    "book_of_buildings.png",
+    "book_of_fighting.png",
+    "book_of_everything.png"
   ]
 }
