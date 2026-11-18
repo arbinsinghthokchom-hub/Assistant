@@ -1,5 +1,5 @@
 {
-  "version": 86,
+  "version": 87,
   "templates": [
     "apprentice_warden.png",
     "archer.png",
@@ -205,7 +205,7 @@
     "wizard_tower.png",
     "bomb_tower.png",
     "air_sweeper.png",
-    "hidden_tesla.png",
+    "hidden_tesla_n.png",
     "x_bow.png",
     "inferno_tower.png",
     "eagle_artillery.png",
