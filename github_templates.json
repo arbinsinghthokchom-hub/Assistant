@@ -1,5 +1,5 @@
 {
-  "version": 90,
+  "version": 91,
   "templates": [
     "apprentice_warden.png",
     "archer.png",
@@ -244,6 +244,7 @@
     "book_of_heroes.png",
     "book_of_buildings.png",
     "book_of_fighting.png",
+    "chest_new.png",
     "book_of_everything.png"
   ]
 }
