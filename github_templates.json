@@ -1,5 +1,5 @@
 {
-  "version": 91,
+  "version": 92,
   "templates": [
     "apprentice_warden.png",
     "archer.png",
@@ -245,6 +245,9 @@
     "book_of_buildings.png",
     "book_of_fighting.png",
     "chest_new.png",
+    "name_change_gear.png",
+    "name_change_info.png",
+    "supercell_id.png",
     "book_of_everything.png"
   ]
 }
