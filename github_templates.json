@@ -1,5 +1,5 @@
 {
-  "version": 100,
+  "version": 101,
   "templates": [
     "apprentice_warden.png",
     "archer.png",
@@ -257,6 +257,9 @@
     "save.png",
     "decrease.png",
     "increase.png",
+    "search_clan_back.png",
+    "refresh_available.png",
+    "refresh_not_available.png",
     "apply.png",
     "book_of_everything.png"
   ]
