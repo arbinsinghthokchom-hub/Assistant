@@ -1,5 +1,5 @@
 {
-  "version": 98,
+  "version": 100,
   "templates": [
     "apprentice_warden.png",
     "archer.png",
@@ -252,6 +252,12 @@
     "night_attack.png",
     "name_change_gems.png",
     "join_now.png",
+    "search_options.png",
+    "view_clan.png",
+    "save.png",
+    "decrease.png",
+    "increase.png",
+    "apply.png",
     "book_of_everything.png"
   ]
 }
