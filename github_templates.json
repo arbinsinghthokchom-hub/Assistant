@@ -1,5 +1,5 @@
 {
-  "version": 95,
+  "version": 96,
   "templates": [
     "apprentice_warden.png",
     "archer.png",
@@ -248,7 +248,7 @@
     "name_change_gear.png",
     "name_change_info.png",
     "supercell_id.png",
-    "boat_1.png",
+    "boat_2.png",
     "night_attack.png",
     "name_change_gems.png",
     "book_of_everything.png"
