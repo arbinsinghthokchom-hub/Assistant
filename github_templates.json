@@ -1,5 +1,5 @@
 {
-  "version": 97,
+  "version": 98,
   "templates": [
     "apprentice_warden.png",
     "archer.png",
@@ -251,6 +251,7 @@
     "boat_2.png",
     "night_attack.png",
     "name_change_gems.png",
+    "join_now.png",
     "book_of_everything.png"
   ]
 }
