@@ -1,5 +1,5 @@
 {
-  "version": 103,
+  "version": 104,
   "templates": [
     "apprentice_warden.png",
     "archer.png",
@@ -262,6 +262,7 @@
     "refresh_not_available.png",
     "apply.png",
     "close_message.png",
+    "bookmark.png",
     "book_of_everything.png"
   ]
 }
