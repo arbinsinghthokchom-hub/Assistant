@@ -1,5 +1,5 @@
 {
-  "version": 107,
+  "version": 108,
   "templates": [
     "apprentice_warden.png",
     "archer.png",
@@ -274,6 +274,10 @@
     "raid_map_1.png",
     "raid_map_2.png",
     "collect_capital_coin.png",
+    "start_raid_screen.png",
+    "start_raid.png",
+    "raid_army_edit.png",
+     "raid_army_save.png",
     "clans_2.png"
   ]
 }
