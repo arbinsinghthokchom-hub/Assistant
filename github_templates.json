@@ -1,5 +1,5 @@
 {
-  "version": 104,
+  "version": 105,
   "templates": [
     "apprentice_warden.png",
     "archer.png",
@@ -263,6 +263,12 @@
     "apply.png",
     "close_message.png",
     "bookmark.png",
-    "book_of_everything.png"
+    "book_of_everything.png",
+    "join_clan_1.png",
+    "join_clan_2.png",
+    "my_clan_1.png",
+    "my_clan_2.png",
+    "clans_1.png",
+    "clans_2.png"
   ]
 }
