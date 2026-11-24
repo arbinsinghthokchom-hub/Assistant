@@ -1,5 +1,5 @@
 {
-  "version": 109,
+  "version": 110,
   "templates": [
     "1x.png",
     "2nd_entry.png",
@@ -289,6 +289,7 @@
     "x_bow.png",
     "yeti.png",
     "you_need_more.png",
+    "plus.png",
     "yourvillageisunderattack.png"
   ]
 }
