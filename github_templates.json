@@ -1,5 +1,5 @@
 {
-  "version": 110,
+  "version": 111,
   "templates": [
     "1x.png",
     "2nd_entry.png",
@@ -176,6 +176,8 @@
     "night_witch_logo.webp",
     "notNow.png",
     "ok.png",
+    "defending_barbarian.png",
+    "home_edit_army.png",
     "okay_for_star_bonus.png",
     "open_message.png",
     "overgrowth.png",
