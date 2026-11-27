@@ -1,5 +1,5 @@
 {
-  "version": 114,
+  "version": 115,
   "templates": [
     "1x.png",
     "old_man.png",
@@ -8,6 +8,8 @@
     "500.png",
     "age_filling.png",
     "air_bomb.png",
+    "reinforcement_arrow.png",
+    "coc_loading_screen.png",
     "air_defense.png",
     "air_sweeper.png",
     "apply.png",
